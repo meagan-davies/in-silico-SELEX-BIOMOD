@@ -4,8 +4,8 @@ import random
 import subprocess
 
 # --- SETTINGS ---
-RNAFOLD_PATH = "/Users/zehaanwalji/miniconda3/envs/vienna-env/bin/RNAfold"
-DNA_PARAMS = "/Users/zehaanwalji/miniconda3/envs/vienna-env/share/ViennaRNA/dna_mathews2004.par"
+RNAFOLD_PATH = os.path.expanduser("~/ViennaRNA/bin/RNAfold")
+DNA_PARAMS = os.path.expanduser("~/ViennaRNA/share/ViennaRNA/dna_mathews2004.par")
 OUTPUT_DIR = os.path.abspath("3d_input_files")
 NUMBER_OF_SEQUENCES = 10
 MIN_LENGTH = 30
